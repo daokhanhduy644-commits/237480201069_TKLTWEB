@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thiết kế trang web - Đăng ký xét tuyển</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            width: 1000px;
+            background-color: white;
+            border: 1px solid #000;
+        }
+
+        /* Cột trái: Thông báo tuyển sinh */
+        .sidebar {
+            width: 40%;
+            border-right: 2px solid #000;
+            padding: 15px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-section img {
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .uni-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .announcement-title {
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .sidebar-content {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .sidebar-images img {
+            width: 100%;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Cột phải: Form đăng ký */
+        .main-form {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .header-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header-text h3 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .form-title {
+            font-family: Verdana, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 250px;
+            border: 1px solid #000;
+        }
+
+        .radio-group {
+            margin-left: 100px;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .radio-option {
+            margin-bottom: 5px;
+        }
+
+        .button-group {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        button {
+            padding: 5px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: 1px solid #888;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="logo-section">
+          <div class="uni-name">TRƯỜG ĐẠI HỌC BẠC LIÊU<br>BAC LIEU UNIVERSITY</div>
+        </div>
+        
+        <div class="announcement-title">THÔNG BÁO TUYỂN SINH</div>
+        <p style="text-align: center; font-style: italic;">(Hệ đại học không chính quy)</p>
+
+        <div class="sidebar-content">
+            <ol>
+                <li>Tài chính tín dụng</li>
+                <li>Quản lý đất đai</li>
+                <li>Công nghệ thực phẩm</li>
+                <li>Văn hóa du lịch</li>
+            </ol>
+            <p><strong>Môn thi:</strong></p>
+            <ul>
+                <li>Môn thi: Văn, Sử, Địa</li>
+                <li>Ngày thi: 19/12/2008</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-images">
+            <div style="height: 100px; background: #ddd; margin-bottom: 5px; display: flex; align-items: center; justify-content: center;">[Ảnh 1]</div>
+            <div style="height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center;">[Ảnh 2]</div>
+        </div>
+    </div>
+
+    <div class="main-form">
+        <div class="header-text">
+            <h3>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h3>
+            <p>Độc lập - Tự do - Hạnh phúc</p>
+            <hr width="50%">
+            <p>TRƯỜNG ĐẠI HỌC BẠC LIÊU<br>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</p>
+        </div>
+
+        <div class="form-title">ĐĂNG KÝ XÉT TUYỂN</div>
+
+        <div class="form-group">
+            <label>Họ tên:</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <input type="radio" name="gender" id="nam"> <label for="nam" style="width: auto; font-weight: normal; margin-right: 20px;">Nam</label>
+            <input type="radio" name="gender" id="nu"> <label for="nu" style="width: auto; font-weight: normal;">Nữ</label>
+        </div>
+
+        <div class="form-group" style="align-items: flex-start;">
+            <label>Ngành thi:</label>
+            <div class="radio-option-list">
+                <div class="radio-option">
+                    <input type="radio" name="nganh" id="cntt"> <label for="cntt" style="width: auto; font-weight: normal;">Công nghệ thông tin</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="nganh" id="mn"> <label for="mn" style="width: auto; font-weight: normal;">Mầm non</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="nganh" id="an"> <label for="an" style="width: auto; font-weight: normal;">Âm nhạc</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Đồng ý</button>
+            <button type="reset">Không đồng ý</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
