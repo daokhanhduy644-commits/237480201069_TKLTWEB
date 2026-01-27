@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký dự thi</title>
+    <title>Thời khóa biểu</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Tô màu ô Sáng và Chiều */
+        .buoi {
+            background-color: #c5d13f; 
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <table style="width: 100%;">
+    <table>
         <tr>
-          <td style="text-align: left; width: 50%;">
-            <h2>
-              <font face="Tahoma" size="4" color="blue">
-                <b>TRƯỜNG ĐẠI HỌC BẠC LIÊU<br /></b> KHOA KỸ THUẬT VÀ CÔNG NGHỆ
-              </font>
-            </h2>
-          </td>
-          <td style="text-align: right; width: 50%;">
-            <h2>
-              <font face="Tahoma" size="4" color="black">
-                <b>CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM <br /></b> Độc lập - Tự do - Hạnh phúc
-              </font>
-            </h2>
-          </td>
+            <th>Thứ/Buổi</th>
+            <th>Hai</th>
+            <th>Ba</th>
+            <th>Tư</th>
+            <th>Năm</th>
+            <th>Sáu</th>
+            <th>Bảy</th>
+            <th>CN</th>
         </tr>
-      </table>
-      <form method="POST" acction="">
-        <p><font face = "Arial" size ="2"> Họ tên :</font>
-        <input type="text" name="HT" size="35" value="" maxlength="30"></p>
-      </form>
-      <form method="POST" acction="">
-        <p><font face = "Arial" size ="2"> Họ tên :</font>
-        <input type="text" name="HT" size="35" value="" maxlength="30"></p>
-      </form>
+        <tr>
+            <td class="buoi">Sáng</td>
+            <td>Toán</td>
+            <td>Lý</td>
+            <td>Hoá</td>
+            <td>Toán</td>
+            <td>Lý</td>
+            <td>Hoá</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="buoi">Chiều</td>
+            <td>Văn</td>
+            <td>Sử</td>
+            <td>Sinh</td>
+            <td>Địa</td>
+            <td>GDCD</td>
+            <td>Anh</td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
