@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị của thuộc tính</title>
+</head>
+<body>
+    <h2>Hãy nhập 2 số và lick vào nút tính tổng</h2>
+    <input type="text" name="SoHang1"> +
+    <input type="text" name="SoHang2"> =
+    <input type="text" name="KetQua">
+    <input type="button" value="Tính Tổng" onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a + b;">
+</body>
+</html>

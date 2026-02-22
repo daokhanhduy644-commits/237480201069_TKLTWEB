@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="SoHang1"> 
+    <input type="text" name="SoHang2"> =
+    <input type="text" name="KetQua">
+    <br><br>
+
+    <input type="button" value="Cộng"
+    onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a + b;">
+
+    <input type="button" value="Trừ"
+    onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a - b;">
+
+    <input type="button" value="Nhân"
+    onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a * b;">
+
+    <input type="button" value="Chia"
+    onclick="
+    var a = parseFloat(document.getElementsByName('SoHang1')[0].value) || 0;
+    var b = parseFloat(document.getElementsByName('SoHang2')[0].value) || 0;
+    document.getElementsByName('KetQua')[0].value = a / b;">
+</body>
+</html>
