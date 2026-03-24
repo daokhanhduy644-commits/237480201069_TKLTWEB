@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang đăng nhập</title>
+
+    <style>
+      .box {
+        width: 300px;
+        margin: 100px auto;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+      }
+      input {
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>TRANG ĐĂNG NHẬP</h3>
+
+      <form action="login.php" method="post">
+        Username:<br />
+        <input type="text" name="username" /><br />
+
+        Email:<br />
+        <input type="text" name="email" /><br />
+
+        Password:<br />
+        <input type="password" name="password" /><br /><br />
+
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
