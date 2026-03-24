@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2.3 - Thông báo tuyển sinh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font mặc định cho toàn trang */
+            line-height: 1.6;
+        }
+        .container {
+            border: 1px solid black;
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .header-left {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .header-right {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .slogan {
+            font-weight: normal;
+            font-size: 13px;
+        }
+        .title-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .main-title {
+            font-family: Verdana, sans-serif; /* Theo yêu cầu trong ảnh */
+            font-size: 24px; /* tương ứng h1 */
+            font-weight: bold;
+            color: red;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .sub-title {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .content {
+            font-family: Arial, sans-serif;
+            font-size: 15px; /* Theo yêu cầu Arial, 15 */
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: decimal; /* Đánh số 1, 2, 3... */
+        }
+        ul ul {
+            list-style-type: disc; /* Dấu chấm tròn cho danh sách con */
+        }
+        .footer-images {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-images img {
+            height: 100px; /* Độ cao ảnh mẫu */
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-left">
+            TRƯỜNG ĐẠI HỌC BẠC LIÊU<br>
+            KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+        </div>
+        <div class="header-right">
+            CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br>
+            <span class="slogan">Độc lập - Tự do - Hạnh phúc</span>
+        </div>
+    </div>
+
+    <div class="title-section">
+        <div class="main-title">THÔNG BÁO TUYỂN SINH</div>
+        <div class="sub-title">(Hệ đại học không chính qui)</div>
+    </div>
+
+    <div class="content">
+        <ul>
+            <li><b>Tài chính tín dụng</b></li>
+            <li><b>Quản lý đất đai</b></li>
+            <li><b>Công nghệ thực phẩm</b></li>
+            <li><b>Văn hóa du lịch</b>
+                <div style="margin-left: 20px;">
+                    <b>Môn thi:</b>
+        <ul style="list-style-type: disc;">
+                        <li>Môn thi: Văn, Sử, Địa</li>
+                        <li>Ngày thi: 19/12/2008</li>
+                        <li>Ôn tập văn hóa: 13/11/2008</li>
+                    </ul>
+                </div>
+            </li>
+            <li><b>Công tác xã hội</b></li>
+            <li><b>Báo chí</b>
+                <div style="margin-left: 20px;">
+                    <b>Môn thi:</b>
+                    <ul style="list-style-type: disc;">
+                        <li>Môn thi: Văn, Sử, Địa</li>
+                        <li>Ngày thi: 20/12/2008</li>
+                        <li>Ôn tập văn hóa: 14/11/2008</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-images">
+        <img src="https://via.placeholder.com/150x80?text=Logo+BLU" alt="Logo Bac Lieu University">
+        <img src="https://via.placeholder.com/150x80?text=Khu+A" alt="Hinh anh khuon vien 1">
+        <img src="https://via.placeholder.com/150x80?text=Khu+B" alt="Hinh anh khuon vien 2">
+    </div>
+</div>
+
+</body>
+</html>
